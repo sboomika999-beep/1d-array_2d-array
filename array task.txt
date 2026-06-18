@@ -1,0 +1,15 @@
+enter the 5 numbers 
+2
+4
+6
+8
+10
+the 5 numbers are 
+2 
+4 
+6 
+8 
+10 
+
+
+=== Code Execution Successful ===
