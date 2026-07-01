@@ -1,0 +1,314 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct employee
+{
+    int id;
+    char name[10];
+    float salary;
+};
+int main() 
+{
+    struct employee s1;
+    printf("enter a employee id \n");
+    scanf("%d",&s1.id);
+    printf("enter a employee name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.name);
+    printf("enter a employee salary \n");
+    scanf("%f",&s1.salary);
+    printf("Employee :\n id : %d\n name : %s\n salary : %f",s1.id,s1.name,s1.salary);
+   
+    return 0;
+}
+enter a employee id 
+45
+enter a employee name 
+SAJNA
+enter a employee salary 
+46000.456
+Employee :
+ id : 45
+ name : SAJNA
+ salary : 46000.457031
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+struct student
+{
+    int roll_no;
+    char name[50];
+    float marks;
+};
+int main() 
+{
+    struct student s1;
+    printf("enter a student roll_no \n");
+    scanf("%d",&s1.roll_no);
+    printf("enter a student name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.name);
+    printf("enter a student marks \n");
+    scanf("%f",&s1.marks);
+    printf("Student :\n roll_no : %d\n name : %s\n marks : %f",s1.roll_no,s1.name,s1.marks);
+   
+    return 0;
+}
+enter a student roll_no 
+8
+enter a student name 
+AKSHAYA
+enter a student marks 
+98.99
+Student :
+ roll_no : 8
+ name : AKSHAYA
+ marks : 98.989998
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+struct book
+{
+    char book_name[50];
+    char author_name[50];
+    float price;
+};
+int main() 
+{
+    struct book s1;
+    printf("enter a book_name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.book_name);
+    printf("enter a author_name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.author_name);
+    printf("enter a book price \n");
+    scanf("%f",&s1.price);
+    printf("Book :\n book_name : %s\n author_name : %s\n price : %f",s1.book_name,s1.author_name,s1.price);
+   
+    return 0;
+}
+enter a book_name 
+THE HARRY POTTER
+enter a author_name 
+J.K.ROWLING
+enter a book price 
+450.456
+Book :
+ book_name : THE HARRY POTTER
+ author_name : J.K.ROWLING
+ price : 450.455994
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+struct product
+{
+    int id;
+    char product_name[50];
+    float price;
+    int quantity;
+};
+int main() 
+{
+    struct product s1;
+    printf("enter a product id \n");
+    scanf("%d",&s1.id);
+    printf("enter a product_name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.product_name);
+    printf("enter a product price \n");
+    scanf("%f",&s1.price);
+    printf("enter a product quantity \n");
+    scanf("%d",&s1.quantity);
+    printf("Product :\n id : %d\n product_name : %s\n price : %f\n quantity :%d\n",s1.id,s1.product_name,s1.price,s1.quantity);
+   
+    return 0;
+}
+enter a product id 
+45
+enter a product_name 
+HIMALAYA FASH WASH
+enter a product price 
+150.654
+enter a product quantity 
+100 ml
+Product :
+ id : 45
+ product_name : HIMALAYA FASH WASH
+ price : 150.654007
+ quantity :100
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+struct product
+{
+    int id;
+    char product_name[50];
+    float price;
+    int quantity;
+};
+int main() 
+{
+    struct product s1;
+    printf("enter a product id \n");
+    scanf("%d",&s1.id);
+    printf("enter a product_name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.product_name);
+    printf("enter a product price \n");
+    scanf("%f",&s1.price);
+    printf("enter a product quantity \n");
+    scanf("%d",&s1.quantity);
+    printf("Product :\n id : %d\n product_name : %s\n price : %f\n quantity :%d\n",s1.id,s1.product_name,s1.price,s1.quantity);
+    printf(" the total cost of the product : %2f \n",s1.price*s1.quantity);
+
+
+
+
+    return 0;
+}
+enter a product id 
+41
+enter a product_name 
+JIM JAM BISCUIT
+enter a product price 
+10.00
+enter a product quantity 
+4
+Product :
+ id : 41
+ product_name : JIM JAM BISCUIT
+ price : 10.000000
+ quantity :4
+ the total cost of the product : 40.000000 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+struct student
+{
+    char student_name[50];
+    float marks;
+};
+int main() 
+{
+    struct student s1;
+    printf("enter a first student name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.student_name);
+    printf("enter a marks \n");
+    scanf("%f",&s1.marks);
+    struct student s2;
+    printf("enter a second student name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s2.student_name);
+    printf("enter a marks \n");
+    scanf("%f",&s2.marks);
+    if(s1.marks>s2.marks)
+    {
+       printf("%s scored higher",s1.student_name);
+    }
+    else
+    {
+       printf("%s scored higher",s2.student_name);
+    }
+
+
+
+
+    return 0;
+}
+enter a first student name 
+BOOMIKA
+enter a marks 
+89.76
+enter a second student name 
+PREETHA
+enter a marks 
+96.78
+PREETHA scored higher
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+struct book
+{
+    int id;
+    char book_name[50];
+    char status[50];
+};
+int main() 
+{
+    
+    struct book s1;
+    int available_books;
+    printf("enter a number of books \n");
+    scanf("%d",&available_books);  
+    printf("enter a book id \n");
+    scanf("%d",&s1.id);
+    printf("enter a book name \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.book_name);
+    printf("enter a issue status \n");
+    scanf("\n");
+    scanf("%[^\n]",&s1.status);
+    printf("Book :\n id : %d\n book_name : %s\n status : %s\n ",s1.id,s1.book_name,s1.status);
+    
+    if(strcmp(s1.status,"issued")==0)
+    {
+        available_books--;
+        printf("%s book is issued \n",s1.book_name);
+    }
+    else if(strcmp(s1.status,"returned")==0)
+    {
+        available_books++;
+        printf("%s book is returned \n",s1.book_name);
+    }
+    else if(strcmp(s1.status,"issued")!=0)
+    {
+        printf("%s books is available \n",s1.book_name);
+    }
+    else
+    {
+        printf("\n end");
+    }
+     printf("available books = %d \n",available_books); 
+   
+    return 0;
+}
+
+enter a number of books 
+79
+enter a book id 
+34
+enter a book name 
+THE GREAT LEADER
+enter a issue status 
+issued
+Book :
+ id : 34
+ book_name : THE GREAT LEADER
+ status : issued
+ THE GREAT LEADER book is issued 
+ available books = 78 
+
+
+=== Code Execution Successful ===
