@@ -1,0 +1,196 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+  int m=44;
+  int *n=&m;
+  printf("%d \n",&m);
+  printf("%d \n",*n);
+    return 0;
+}
+749110308 
+44 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    int a=22;
+    int b=44;
+    int *c=&a;
+    int *d=&b;
+    int var;
+    var=*c;
+    *c=*d;
+    *d=var;
+    printf("after swapping a:%d,b:%d ",*c,*d);
+    
+   
+
+    return 0;
+}
+after swapping a:44,b:22 
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a=20;
+   int *b=&a;
+   (*b)++;
+   printf("after increment:%d \n",*b);
+   (*b)--;
+   printf("after decrement:%d \n",*b);
+   
+   
+
+    return 0;
+}
+after increment:21 
+after decrement:20 
+
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a=20;
+   int b=40;
+   int *c,*d;
+   c=&a;
+   d=&b;
+   printf("addition is :%d",*c+*d);
+   
+
+    return 0;
+}
+
+addition is :60
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a=50;
+   int *b=&a;
+   *b=100;
+   printf("the new value :%d",*b);
+  
+   
+
+    return 0;
+}
+the new value :100
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a=50;
+   int *b=&a;
+   if(*b%2==0)
+      printf("%d is a even number",*b);
+   else
+      printf("%d is a odd number",*b);
+   
+   
+
+    return 0;
+}
+
+50 is a even number
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a;
+   printf("enter a number");
+   scanf("%d",&a);
+   int *b=&a;
+   printf("the square is %d",(*b)*(*b));
+
+    return 0;
+}
+enter a number7
+the square is 49
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a;
+   printf("enter a number");
+   scanf("%d",&a);
+   int *b=&a;
+   printf("the cube is %d",(*b)*(*b)*(*b));
+
+    return 0;
+}
+enter a number5
+the cube is 125
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a=22;
+   int *b=&a;
+   printf("the value is :%d \n",*b);
+    return 0;
+}
+the value is :22 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int a=22;
+   int *b=&a;
+   int c=56;
+   int *d=&c;
+   if(*b>*d)
+   {
+       printf("a value is larger:%d",*b);
+   }
+   else 
+   {
+       printf("c value is larger:%d",*d);
+   }
+    return 0;
+}
+c value is larger:56
+
+=== Code Execution Successful ===
