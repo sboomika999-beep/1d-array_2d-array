@@ -1,0 +1,403 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+   int *arr,n;
+   printf("enter the array size\n");
+   scanf("%d",&n);
+   arr=(int*)malloc(n*sizeof(int));
+   printf("enter array values:\n");
+   
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",(arr+i));
+   }
+   for(int i=0;i<n;i++)
+   {
+       printf("%d \n",*(arr+i));
+   }
+   
+    return 0;
+}
+enter the array size
+4
+enter array values:
+3
+55
+7
+9
+3 
+55 
+7 
+9 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+   int *arr,n;
+   printf("enter the array size\n");
+   scanf("%d",&n);
+   arr=(int*)malloc(n*sizeof(int));
+   printf("enter array values:\n");
+   
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",(arr+i));
+   }
+   
+   int s=0;
+   for(int i=0;i<n;i++)
+   {
+       s+=*(arr+i);
+   }
+    printf("sum of the array elements are : %d ",s);
+    return 0;
+}
+enter the array size
+2
+enter array values:
+22
+44
+sum of the array elements are : 66 
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+   int a=0;
+   int b=0;
+   int *arr,n;
+   printf("enter the array size\n");
+   scanf("%d",&n);
+   arr=(int*)malloc(n*sizeof(int));
+   printf("enter array values:\n");
+   
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",(arr+i));
+   }
+   for(int i=0;i<n;i++)
+   {
+      if(*(arr+i)%2==0)
+      {
+          a++;
+      }
+      else
+      {
+          b++;
+      }
+   }
+   printf("the count of even numbers are %d \n",a);
+   printf("the count of odd numbers are %d \n",b);
+    
+   
+    return 0;
+}
+enter the array size
+5
+enter array values:
+23
+44
+55
+72
+11
+the count of even numbers are 2 
+the count of odd numbers are 3 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+   int a=0;
+   int *arr,n;
+   printf("enter the array size\n");
+   scanf("%d",&n);
+   arr=(int*)malloc(n*sizeof(int));
+   printf("enter array values:\n");
+   
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",(arr+i));
+   }
+   for(int i=0;i<n;i++)
+   {
+      a+=*(arr+i);
+   }
+   printf("the average of the elements is:%d",a/n);
+    return 0;
+}
+
+enter the array size
+3
+enter array values:
+2
+4
+6
+the average of the elements is:4
+
+=== Code Execution Successful ===
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+   int a=0;
+   int b=0;
+   int *arr,n;
+   printf("enter the array size\n");
+   scanf("%d",&n);
+   arr=(int*)malloc(n*sizeof(int));
+   printf("enter array values:\n");
+   
+   for(int i=0;i<n;i++)
+   {
+       scanf("%d",(arr+i));
+   }
+   
+   for(int i=n-1;i>=0;i--)
+   {
+     printf(" the reverse array are :%d \n",*(arr+i));
+   }
+   
+    return 0;
+}
+enter the array size
+3
+enter array values:
+45
+89
+32
+ the reverse array are :32 
+ the reverse array are :89 
+ the reverse array are :45 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+int main() 
+{
+    int *arr,n;
+    printf("enter the array size \n");
+    scanf("%d",&n);
+    arr=(int*)malloc(n*sizeof(int));
+    printf("enter the array values \n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",(arr+i));
+    }
+    int i,j;
+    for(int i=0;i<n-1;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            if(*(arr+i)>*(arr+j))
+        {
+            int temp=*(arr+i);
+            *(arr+i)=*(arr+j);
+            *(arr+j)=temp;
+        }
+        }
+    }
+    printf("the ascending order is :\n");
+    for(int i=0;i<n;i++)
+    {
+        printf("%d \n",*(arr+i));
+    }
+    
+    
+    return 0;
+}
+enter the array size 
+5
+enter the array values 
+32
+67
+12
+88
+45
+the ascending order is :
+12 
+32 
+45 
+67 
+88 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+int main() 
+{
+    int *arr,n;
+    printf("enter the array size \n");
+    scanf("%d",&n);
+    arr=(int*)malloc(n*sizeof(int));
+    printf("enter the array values \n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",(arr+i));
+    }
+    int i,j;
+    for(int i=0;i<n-1;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            if(*(arr+i)< *(arr+j))
+        {
+            int temp=*(arr+i);
+            *(arr+i)=*(arr+j);
+            *(arr+j)=temp;
+        }
+        }
+    }
+    printf("the decending order is :\n");
+    for(int i=0;i<n;i++)
+    {
+        printf("%d \n",*(arr+i));
+    }
+    
+    
+    return 0;
+}
+enter the array size 
+5
+enter the array values 
+56
+89
+34
+28
+99
+the decending order is :
+99 
+89 
+56 
+34 
+28 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+int main() 
+{
+    int *arr,n;
+    printf("enter the array size \n");
+    scanf("%d",&n);
+    arr=(int*)malloc(n*sizeof(int));
+    printf("enter the array values \n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",(arr+i));
+    }
+    int largest=*arr;
+    int smallest=*arr;
+    for(int i=0;i<n;i++)
+    {
+        if(*(arr+i)>largest)
+        {
+           largest=*(arr+i) ;
+        }
+        if(*(arr+i)<smallest)
+        {
+            smallest=*(arr+i);
+        }
+    }
+    printf("the largest number is %d \n",largest);
+    printf("the smallest number is %d \n",smallest);
+    
+    
+    return 0;
+}
+enter the array size 
+5
+enter the array values 
+34
+12
+78
+45
+99
+the largest number is 99 
+the smallest number is 12 
+
+
+=== Code Execution Successful ===
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+int main() 
+{
+    int *arr,n;
+    printf("enter the array size \n");
+    scanf("%d",&n);
+    arr=(int*)malloc(n*sizeof(int));
+    printf("enter the array values \n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",(arr+i));
+    }
+    int s,f=0;
+    printf("enter the search element \n");
+    scanf("%d",&s);
+    for(int i=0;i<n;i++)
+    {
+        if(*(arr+i)==s)
+        {
+            f=1;
+        }
+    }
+    if(f==1)
+    {
+        printf("the element is found");
+    }
+    else
+    {
+        printf("the element is not found");
+    }
+    return 0;
+}
+enter the array size 
+5
+enter the array values 
+34
+11
+49
+63
+83
+enter the search element 
+83
+the element is found
+
+=== Code Execution Successful ===
